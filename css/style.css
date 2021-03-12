@@ -2,11 +2,12 @@ body {
   font-family: "MuseoSansCyrl-700";
   color: black;
 }
-a {
-  color: inherit;
-}
-a:hover {
+a,
+a:hover,
+a:active,
+a:visited {
   text-decoration: none;
+  color: inherit;
 }
 * {
   transition: all 0.3s;
@@ -16,6 +17,9 @@ ul {
 }
 h1 {
   font-size: 55px;
+}
+h2 {
+  font-size: 35px;
 }
 .header-top {
   padding: 10px 0px 10px 0px;
@@ -153,10 +157,15 @@ h1 {
 }
 
 .first-section__inner {
-  margin-top: 75px;
+  margin-top: 65px;
 }
+
+.first-section__text {
+  font-size: 23px;
+}
+
 .first-section__btn {
-  margin-top: 20px;
+  margin-top: 40px;
   width: 205px;
   height: 60px;
   text-transform: uppercase;
@@ -167,6 +176,45 @@ h1 {
 
 .first-section__btn:hover {
   background-color: #000;
+}
+
+.second-section {
+  padding-top: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 30px 30px;
+  grid-template-areas:
+    "a a b"
+    "c e b"
+    "d e f";
+}
+
+.a {
+  grid-area: a;
+}
+.b {
+  grid-area: b;
+}
+.c {
+  grid-area: c;
+}
+.d {
+  grid-area: d;
+}
+.e {
+  grid-area: e;
+}
+.f {
+  grid-area: f;
+}
+
+.grid-text {
+  font-size: 20px;
+  padding-top: 5px;
 }
 
 @media (max-width: 640px) {
