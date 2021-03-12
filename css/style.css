@@ -1,0 +1,174 @@
+body {
+  font-family: "MuseoSansCyrl-700";
+  color: black;
+}
+a {
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+}
+* {
+  transition: all 0.3s;
+}
+ul {
+  list-style: none;
+}
+
+.header-top {
+  padding: 10px 0px 10px 0px;
+}
+
+.search {
+  padding-top: 16px;
+  padding-left: 39px;
+}
+
+.form-search_input {
+  height: 38px;
+  width: 100%;
+  border-radius: 20px;
+  border: 2px solid #989898;
+  position: relative;
+  outline: none;
+  padding: 0 20px;
+}
+
+.form-search_input::placeholder {
+  font-size: 15px;
+}
+
+.form-search_btn {
+  position: absolute;
+  bottom: 8px;
+  right: 25px;
+  background-color: transparent;
+  border: none;
+}
+
+.social__inner {
+  height: 40px;
+  margin-left: 10px;
+  margin-top: 25px;
+}
+
+.social__inner a img {
+  padding-left: 40px;
+}
+
+.header-phone {
+  padding-top: 24px;
+  font-size: 18px;
+}
+
+.header-phone a {
+  padding-top: 24px;
+  font-size: 18px;
+  color: #989898;
+}
+
+.header-phone a:hover {
+  color: black;
+}
+
+.header-btn {
+  margin-top: 15px;
+  width: 163px;
+  height: 38px;
+  border: none;
+  color: white;
+  background-color: #ab4e44;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.header-btn:hover {
+  background-color: black;
+}
+
+.header-card {
+  padding-top: 18px;
+  position: relative;
+}
+
+.header-card-counter {
+  width: 33px;
+  height: 24px;
+  background-color: #ab4e44;
+  color: white;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 35px;
+}
+
+.header-bottom {
+  background-color: #333333;
+}
+
+.menu__btn {
+  display: none;
+}
+
+.menu__list {
+  display: flex;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 15px;
+  height: 55px;
+}
+
+.menu__list-item-1 {
+  padding-top: 15px;
+  padding-left: 30px;
+  width: 160px;
+}
+
+.menu__list-item {
+  padding-top: 15px;
+  padding-left: 27px;
+  padding-right: 27px;
+}
+
+.menu__list-item:hover,
+.menu__list-item-1:hover {
+  background-color: #ab4e44;
+  color: #fff;
+}
+
+.menu__list-link-1 {
+  float: right;
+  padding-right: 25px;
+}
+
+@media (max-width: 640px) {
+  .menu {
+    padding: 0;
+    background: linear-gradient(
+      180deg,
+      #111213 0%,
+      #111213 10%,
+      rgba(32, 31, 33, 0) 86.33%
+    );
+    text-align: center;
+  }
+  .menu__list {
+    display: block;
+    transform: translateY(-330%);
+    transition: all 0.3s;
+    color: black;
+  }
+  .menu__list.menu__list--active {
+    transform: translateY(0);
+    padding: 100px 0 50px;
+    background-color: #0e0e0e;
+  }
+  .menu__list-link {
+    display: block;
+    padding: 10px 0;
+  }
+  .menu__btn {
+    background-color: black;
+  }
+}
