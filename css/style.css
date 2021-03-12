@@ -15,6 +15,9 @@ a:visited {
 ul {
   list-style: none;
 }
+button {
+  border: none;
+}
 h1 {
   font-size: 55px;
 }
@@ -49,7 +52,6 @@ h2 {
   bottom: 8px;
   right: 25px;
   background-color: transparent;
-  border: none;
 }
 
 .social__inner {
@@ -81,7 +83,6 @@ h2 {
   margin-top: 15px;
   width: 163px;
   height: 38px;
-  border: none;
   color: white;
   background-color: #ab4e44;
   text-transform: uppercase;
@@ -170,7 +171,6 @@ h2 {
   height: 60px;
   text-transform: uppercase;
   background-color: #ab4e44;
-  border: none;
   color: #fff;
 }
 
@@ -261,7 +261,6 @@ h2 {
 .shop__item-counter {
   width: 40px;
   height: 40px;
-  border: none;
   float: left;
   background-color: transparent;
 }
@@ -281,12 +280,74 @@ h2 {
   float: right;
   text-transform: uppercase;
   background-color: #ab4e44;
-  border: none;
   color: #fff;
 }
 
 .add_to_card:hover {
   background-color: #000;
+}
+
+.fourth-section {
+  padding-top: 200px;
+  padding-bottom: 140px;
+}
+
+.fourth-col-1 {
+  background-color: #ab4e44;
+  color: #fff;
+  position: relative;
+}
+
+.fourth-col-1::before {
+  content: "";
+  background-image: url(../img/serv.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 253px;
+  height: 279px;
+  top: -150px;
+  left: 100px;
+}
+
+.fourth-section_title {
+  padding-top: 120px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  font-size: 31px;
+}
+.fourth-section_btn {
+  width: 180px;
+  height: 60px;
+  background-color: #fff;
+  text-transform: uppercase;
+  color: #000;
+  margin-bottom: 55px;
+  margin-left: 20px;
+}
+
+.fourth-section_btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.fourth-section-items {
+  background-color: #f5efeb;
+}
+
+.fourth-section__item {
+  padding-left: 20px;
+}
+
+.fourth-sec__item-title {
+  margin-block-end: 0.6em;
+  font-size: 19px;
+}
+
+.item-info {
+  font-family: "MuseoSansCyrl-300";
+  padding-bottom: 15px;
+  font-size: 14px;
 }
 
 @media (max-width: 640px) {
