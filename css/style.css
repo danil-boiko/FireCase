@@ -186,11 +186,15 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 30px 30px;
+  gap: 24px 30px;
   grid-template-areas:
     "a a b"
     "c e b"
     "d e f";
+}
+
+.grid-container a img {
+  width: 100%;
 }
 
 .a {
@@ -215,6 +219,74 @@ h2 {
 .grid-text {
   font-size: 20px;
   padding-top: 5px;
+}
+
+.third-section {
+  padding-top: 70px;
+}
+
+.shop__item-inner {
+  text-align: right;
+  padding-top: 80px;
+}
+
+.shop__item-art {
+  font-family: "MuseoSansCyrl-100";
+  color: #9a9a9a;
+  text-align: left;
+  padding-top: 10px;
+}
+
+.shop__item-name {
+  width: 150px;
+  text-align: left;
+  padding-top: 10px;
+  font-family: "MuseoSansCyrl-900";
+}
+
+.shop__item-price {
+  text-align: left;
+  padding-top: 20px;
+  font-size: 19px;
+}
+
+.counter__inner {
+  text-align: left;
+  padding-top: 20px;
+  float: left;
+  font-size: 23px;
+  padding-bottom: 20px;
+}
+
+.shop__item-counter {
+  width: 40px;
+  height: 40px;
+  border: none;
+  float: left;
+  background-color: transparent;
+}
+
+.shop__item-num {
+  float: left;
+  padding-top: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.add_to_card {
+  width: 120px;
+  height: 40px;
+  border-radius: 30px;
+  margin-top: 20px;
+  float: right;
+  text-transform: uppercase;
+  background-color: #ab4e44;
+  border: none;
+  color: #fff;
+}
+
+.add_to_card:hover {
+  background-color: #000;
 }
 
 @media (max-width: 640px) {
