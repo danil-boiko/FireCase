@@ -350,6 +350,26 @@ h2 {
   font-size: 14px;
 }
 
+.fifth-section_title {
+  padding-bottom: 50px;
+}
+
+.fifth-section-items img {
+  width: 60px;
+  height: 50px;
+}
+
+.fifth-section__text {
+  font-family: "MuseoSansCyrl-500";
+  padding-top: 30px;
+  font-size: 17px;
+}
+
+.fifth-sec_row {
+  height: 200px;
+  margin-bottom: 100px;
+}
+
 @media (max-width: 640px) {
   .menu {
     padding: 0;
