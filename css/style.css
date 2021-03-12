@@ -14,7 +14,9 @@ a:hover {
 ul {
   list-style: none;
 }
-
+h1 {
+  font-size: 55px;
+}
 .header-top {
   padding: 10px 0px 10px 0px;
 }
@@ -140,6 +142,31 @@ ul {
 .menu__list-link-1 {
   float: right;
   padding-right: 25px;
+}
+
+.first-section {
+  height: 553px;
+  background-image: url(../img/first-cover.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.first-section__inner {
+  margin-top: 75px;
+}
+.first-section__btn {
+  margin-top: 20px;
+  width: 205px;
+  height: 60px;
+  text-transform: uppercase;
+  background-color: #ab4e44;
+  border: none;
+  color: #fff;
+}
+
+.first-section__btn:hover {
+  background-color: #000;
 }
 
 @media (max-width: 640px) {
