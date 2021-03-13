@@ -439,6 +439,12 @@ footer {
   }
 }
 
+@media(max-width: 1180px){
+  .shop__item-inner{
+    text-align: center;
+  }
+
+}
 @media(max-width: 990px){
   .header-top{
     text-align: center;
@@ -509,6 +515,16 @@ footer {
   h2{
     font-size:25px
   }
+  .shop__item-art, .shop__item-price{
+    text-align: center;
+  }
+  .shop__item-name{
+    margin: 0 auto;
+  }
+  .item_to_card_inner{
+    width: 40%;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 765px) {
@@ -565,7 +581,12 @@ footer {
         gap: 10px 10px;
   }
 }
-
+@media(max-width:666px){
+  .item_to_card_inner{
+    width: 70%;
+    margin: 0 auto;
+  }
+}
 @media(max-width: 420px){
   .social__inner{
     display: none;
@@ -584,4 +605,24 @@ footer {
         "f f";
         gap: 10px 10px;
   }
+  .item_to_card_inner{
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width:361px){
+  .counter__inner{
+    float: none;
+    padding-top: 10px;
+    width: 100%;
+  }
+  .add_to_card{
+    float: none;
+  }
+  .shop__item-num{
+    width: 60%;
+    text-align: center;
+  }
+
 }
