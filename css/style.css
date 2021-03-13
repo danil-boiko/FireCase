@@ -409,6 +409,10 @@ footer {
   padding-top: 10px;
 }
 
+#padding_for_3_item{
+  padding-bottom: 100px;
+}
+
 @media(max-width: 1210px){
   .social__inner{
     margin-left: 0;
@@ -443,7 +447,12 @@ footer {
   .shop__item-inner{
     text-align: center;
   }
+}
 
+@media(max-width: 1024px){
+  .fourth-section{
+    padding-bottom: 70px;
+  }
 }
 @media(max-width: 990px){
   .header-top{
@@ -478,6 +487,15 @@ footer {
   }
   .grid-text{
     font-size: 18px;
+  }
+  .fourth-section{
+    padding-bottom: 70px;
+  }
+  #padding_for_3_item{
+    padding-bottom: 0;
+  }
+  .fifth-section__text{
+    padding-bottom: 50px;
   }
 }
 @media(max-width:840px){
@@ -524,6 +542,13 @@ footer {
   .item_to_card_inner{
     width: 40%;
     margin: 0 auto;
+  }
+  .fifth-section_title, .fifth-section-items{
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  #padding_for_3_item{
+    padding-bottom: 40px;
   }
 }
 
@@ -586,6 +611,18 @@ footer {
     width: 70%;
     margin: 0 auto;
   }
+  .fourth-section_title{
+    font-size: 25px;
+  }
+  .fourth-section_btn{
+    position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-left: 0;
+  }
+  .fourth-col-1::before {
+    left: 50px;
+  }
 }
 @media(max-width: 420px){
   .social__inner{
@@ -623,6 +660,21 @@ footer {
   .shop__item-num{
     width: 60%;
     text-align: center;
+  }
+  .fourth-section{
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .fourth-col-1::before {
+    display: none;
+  }
+  .fourth-section_title{
+    font-size: 22px;
+    padding-top: 60px;
+  }
+  .fourth-section__btn{
+    width: 150px;
+    height: 50px;
   }
 
 }
