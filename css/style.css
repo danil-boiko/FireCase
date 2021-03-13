@@ -133,7 +133,7 @@ h2 {
   width: 160px;
 }
 
-.menu__list-item {
+.menu__list-item,.menu__list-item-3, .menu__list-item-5 {
   padding-top: 15px;
   padding-left: 27px;
   padding-right: 27px;
@@ -423,6 +423,17 @@ footer {
     width: 130px;
     height: 45px;
   }
+  .menu__list-item-1{
+    padding-left: 0;
+  }
+  .menu__list-item{
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 14px;
+  }
+  .menu__list-item_dots{
+    display: none;
+  }
 }
 
 @media(max-width: 990px){
@@ -442,13 +453,22 @@ footer {
   .search{
     padding-left: 15px;
   }
+  .menu__list-item-1 img{
+    display: none;
+  }
+  .menu__list-item-3, .menu__list-item-5{
+    padding-top: 7px;
+  }
+  .menu__list-link-1 {
+    float: left;
+    padding-right: 0;
+}
 }
 
 @media(max-width: 770px){
   .header-card-counter{
     display: none;
   }
-  
   .social__inner{
     width: 60%;
     margin: 0 auto;
@@ -456,7 +476,7 @@ footer {
     text-align: left;
   }
   .social__inner a img{
-    padding-right: 27%;
+    padding-right: 10%;
     padding-left: 0;
   }
   .header-vk img{
@@ -466,7 +486,12 @@ footer {
     text-align: right !important;
     float: right;
   }
-
+  .menu__list{
+    display: none;
+  }
+  .header-bottom{
+    background-color: #fff;
+  }
 }
 
 @media (max-width: 640px) {
@@ -476,31 +501,42 @@ footer {
 
   .menu {
     padding: 0;
-    background: linear-gradient(
-      180deg,
-      #111213 0%,
-      #111213 10%,
-      rgba(32, 31, 33, 0) 86.33%
-    );
     text-align: center;
   }
   .menu__list {
     display: block;
-    transform: translateY(-330%);
+    transform: translateY(-1500%);
     transition: all 0.3s;
-    color: black;
+    color: #fff;
   }
   .menu__list.menu__list--active {
     transform: translateY(0);
-    padding: 100px 0 50px;
-    background-color: #0e0e0e;
+    background: #000;
+    text-align: center;
+    height: 120%;
   }
+.menu__list-link-1{
+  float: none;
+  padding-top: 20px;
+}
   .menu__list-link {
     display: block;
-    padding: 10px 0;
   }
   .menu__btn {
+    display: block;
+    position: fixed;
     background-color: black;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+  }
+  .menu__list-item{
+    padding-top: 0;
+  }
+  .menu__list-item:hover,
+  .menu__list-item-1:hover {
+  background-color: #000;
   }
 }
 
