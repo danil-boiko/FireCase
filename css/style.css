@@ -151,7 +151,6 @@ h2 {
 }
 
 .first-section {
-  height: 553px;
   background-image: url(../img/first-cover.png);
   background-size: cover;
   background-position: center;
@@ -173,6 +172,7 @@ h2 {
   text-transform: uppercase;
   background-color: #ab4e44;
   color: #fff;
+  margin-bottom: 80px;
 }
 
 .first-section__btn:hover {
@@ -464,7 +464,11 @@ footer {
     padding-right: 0;
 }
 }
-
+@media(max-width:840px){
+  .menu{
+    display: none;
+  }
+}
 @media(max-width: 770px){
   .header-card-counter{
     display: none;
@@ -486,20 +490,21 @@ footer {
     text-align: right !important;
     float: right;
   }
-  .menu__list{
-    display: none;
-  }
   .header-bottom{
     background-color: #fff;
   }
+  h1{
+    font-size: 40px;
+  }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 765px) {
   .social__inner a img{
     padding-right: 24%;
   }
 
   .menu {
+    display: block;
     padding: 0;
     text-align: center;
   }
@@ -514,6 +519,7 @@ footer {
     background: #000;
     text-align: center;
     height: 120%;
+    margin-bottom: 20px;
   }
 .menu__list-link-1{
   float: none;
@@ -524,7 +530,7 @@ footer {
   }
   .menu__btn {
     display: block;
-    position: fixed;
+    position: absolute;
     background-color: black;
     top: 10px;
     right: 10px;
@@ -543,5 +549,8 @@ footer {
 @media(max-width: 420px){
   .social__inner{
     display: none;
+  }
+  h1{
+    font-size: 30px;
   }
 }
