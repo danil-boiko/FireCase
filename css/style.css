@@ -59,9 +59,11 @@ h2 {
 }
 
 .social__inner {
-  height: 40px;
-  margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40px;
   margin-top: 25px;
+  width: 70%;
 }
 
 .social__inner a img {
