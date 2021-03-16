@@ -125,8 +125,14 @@ h2 {
   display: flex;
   color: #fff;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 14px;
   height: 55px;
+  text-align: center;
+  font-family: 'GothamPro-bold';
+}
+
+.menu__list a{
+ padding-top: 18px;
 }
 
 .menu__list-item-1 {
@@ -139,7 +145,7 @@ h2 {
 .menu__list-item-3,
 .menu__list-item-5 {
   padding-top: 15px;
-  padding-left: 27px;
+  padding-left: 24px;
   padding-right: 27px;
 }
 
@@ -232,9 +238,25 @@ h2 {
   padding-top: 70px;
 }
 
+.popular__items{
+  padding-bottom: 50px;
+}
+
+.shop__row > div{
+  border-left: 1px solid #d6d6d6;
+}
+
+.shop__item-last{
+  border-right: 1px solid #d6d6d6;
+}
+
+.padding_for_shop_row_2{
+  margin-top: 50px;
+}
+
 .shop__item-inner {
   text-align: right;
-  padding-top: 80px;
+  font-family: 'GothamPro-bold';
 }
 
 .shop__item-art {
@@ -258,6 +280,9 @@ h2 {
   position: relative;
 }
 
+.item_to_card_inner{
+  height: 140px;
+}
 .counter__inner {
   text-align: left;
   padding-top: 20px;
@@ -289,6 +314,7 @@ h2 {
   text-transform: uppercase;
   background-color: #ab4e44;
   color: #fff;
+  font-size: 12px;
 }
 
 .add_to_card:hover {
@@ -299,11 +325,11 @@ h2 {
   float: right;
   position: absolute;
   top: 20px;
-  left: 65px;
+  left: 70px;
 }
 
 .fourth-section {
-  padding-top: 200px;
+  padding-top: 160px;
   padding-bottom: 140px;
 }
 
@@ -419,11 +445,13 @@ footer {
 .footer-title {
   text-transform: uppercase;
   padding-top: 30px;
-  font-family: "MuseoSansCyrl-500";
+  font-family: "Gothampro-bold";
+  letter-spacing: 5px;
 }
 
 .footer-info {
-  font-family: "MuseoSansCyrl-300";
+  font-family: "Gothampro-reg";
+  letter-spacing: -1px;
 }
 
 .footer-info li {
@@ -435,13 +463,14 @@ footer {
 }
 
 .footer-phone {
-  font-family: "MuseoSansCyrl-500";
-  font-size: 19px;
+  font-family: "GothamPRO-reg";
+  font-size: 26px;
   padding-top: 45px;
 }
 
 .footer-mail {
-  font-family: "MuseoSansCyrl-500";
+  font-family: "Gothampro-reg";
+  letter-spacing: -1px;
   padding-top: 10px;
 }
 
@@ -450,12 +479,6 @@ footer {
 }
 
 @media (max-width: 1210px) {
-  .social__inner {
-    margin-left: 0;
-  }
-  .social__inner a img {
-    padding-left: 20px;
-  }
   .header-phone a {
     font-size: 14px;
   }
@@ -475,8 +498,14 @@ footer {
     display: none;
   }
   .menu__list-item-3,
-  .menu__list-item-5 {
-    padding-top: 7px;
+  .menu__list-item-5{
+    padding-top: 12px !important;
+  }
+  .padding_for_shop_row_1{
+    margin-top: 50px;
+  }
+  .shop__row > div{
+    border-right: 1px solid #d6d6d6;
   }
 }
 
@@ -497,6 +526,9 @@ footer {
   }
   .header-card-counter {
     left: 90px;
+  }
+  .header-phone{
+    padding-top: 10px;
   }
   .header-phone a {
     font-size: 16px;
@@ -541,18 +573,11 @@ footer {
   }
 }
 @media (max-width: 770px) {
+  .social__inner {
+    margin: 30px auto;
+  }
   .header-card-counter {
     display: none;
-  }
-  .social__inner {
-    width: 60%;
-    margin: 0 auto;
-    padding-top: 20px;
-    text-align: left;
-  }
-  .social__inner a img {
-    padding-right: 10%;
-    padding-left: 0;
   }
   .header-vk img {
     padding-right: 0 !important;
@@ -592,13 +617,12 @@ footer {
   .price-exchange {
     left: 55%;
   }
+  .shop__row > div{
+    border: none;
+  }
 }
 
 @media (max-width: 765px) {
-  .social__inner a img {
-    padding-right: 24%;
-  }
-
   .menu {
     display: block;
     padding: 0;
@@ -748,5 +772,8 @@ footer {
   .fourth-section__btn {
     width: 150px;
     height: 50px;
+  }
+  .popular__items{
+    padding-bottom: 0px;
   }
 }

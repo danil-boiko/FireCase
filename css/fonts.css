@@ -37,3 +37,22 @@
     url("../fonts/MuseoSansCyrl-900.ttf") format("ttf"),
     url("../fonts/MuseoSansCyrl-900.woff") format("woff");
 }
+
+@font-face {
+  font-family: "GothamPRO-med";
+  src: url("../fonts/GothaProMed.otf") format("otf"),
+    url("../fonts/GothaProMed.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "GothamPRO-bold";
+    src: url("../fonts/GothaProMed.otf") format("otf"),
+      url("../fonts/GothaProMed.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "GothamPRO-reg";
+  src: url("../fonts/GothamPro.eot") format("eot"), 
+  url("../fonts/GothamPro.ttf") format("ttf"),
+  url("../fonts/GothamPro.woff") format("woff");
+}
