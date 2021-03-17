@@ -606,12 +606,6 @@ footer {
   position: relative;
 }
 
-.product-price-exchange{
-  position: absolute;
-  top: 0;
-  right: -30px;
-}
-
 .product-counter__inner{
   font-size: 23px;
   padding-right: 5%;
@@ -727,7 +721,7 @@ label{
 .related__item-inner{
   font-family: 'GothamPro-bold';
   text-align: center;
-  height: 440px;
+  height: 500px;
   padding-left: 25px;
   padding-right: 25px;
   position: relative;
@@ -782,7 +776,6 @@ label{
   width: 160px;
   height: 40px;
   border-radius: 30px;
-  margin-top: 20px;
   float: right;
   text-transform: uppercase;
   background-color: #ab4e44;
@@ -800,7 +793,7 @@ label{
   width: 392px;
   left: -400px;
   text-align: center;
-  height: 498px;
+  height: 500px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -821,7 +814,7 @@ label{
   width: 392px;
   right: -400px;
   text-align: center;
-  height: 498px;
+  height: 500px;
   padding-left: 15px;
   padding-right: 15px;
   border-right: 1px solid #d6d6d6;
@@ -841,9 +834,61 @@ label{
   padding-top: 70px;
 }
 
+.product__item-inner{
+  float: left;
+}
+
+.add_to_card-inner{
+  float: right;
+}
+
+.related_counter__inner{
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.related__bottom__inner{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.related__item-counter{
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+}
+.related__item-num{
+  font-size: 23px;
+}
 
 
 /*СТИЛИ ДЛЯ СТРАНИЦЫ ТОВАРА*/
+
+@media(max-width:1990px){
+  .related__item-first, .related__item-last{
+    display: none;
+  }
+  .container__product-last{
+    border-right: 1px solid #d6d6d6;
+  }
+}
+
+@media(max-width:1440px){
+  .images-for-product{
+    left: 15px;
+    top: 650px;
+    width: 300px;
+  }
+  .images-for-product img{
+    padding-bottom: 0;
+    padding-right: 20px;
+  }
+  .product__points{
+    padding: 130px 35px 0 35px;
+  }
+}
 
 @media (max-width: 1210px) {
   .header-phone a {
@@ -874,6 +919,36 @@ label{
   .shop__row > div{
     border-right: 1px solid #d6d6d6;
   }
+  .images-for-product{
+    left: 15px;
+    top: 620px;
+    width: 300px;
+  }
+  .product-art__inner{
+    width: 90%;
+  }
+  .product-price__inner{
+    display: block;
+  }
+  .product-price{
+    width: 40%;
+  }
+  .product-counter__inner{
+    padding-right: 0;
+  }
+  .related-items_row > div{
+    border: none;
+  }
+  .related__item-inner{
+    width: 60%;
+    height: auto;
+    margin: 20px auto;
+  }
+  .related__item-inner > img {
+    margin-top: 75px;
+    width: 50%;
+    height: auto;
+}
 }
 
 @media (max-width: 1180px) {
@@ -933,6 +1008,27 @@ label{
   .fifth-section__text {
     padding-bottom: 50px;
   }
+  .padding-left-none{
+    text-align: center;
+  }
+  .product-photo{
+    width: 40%;
+  }
+  .images-for-product img{
+    padding-bottom: 7px;
+    padding-right: 0;
+  }
+  .images-for-product{
+    left: 25px;
+    top: 50px;
+    width: 70px;
+  }
+  .product__points {
+    padding: 35px 35px 0 35px;
+  }
+  .product-price__inner{
+    display: flex;
+  }
 }
 @media (max-width: 840px) {
   .menu {
@@ -981,11 +1077,11 @@ label{
   #padding_for_3_item {
     padding-bottom: 40px;
   }
-  .price-exchange {
-    left: 55%;
-  }
   .shop__row > div{
     border: none;
+  }  
+  .related__item-art, .shop__item-name{
+    text-align: center;
   }
 }
 
@@ -1062,6 +1158,9 @@ label{
   .footer-contact {
     padding-bottom: 40px;
   }
+  .footer-logo-border{
+    border: none;
+  }
 }
 @media (max-width: 666px) {
   .item_to_card_inner {
@@ -1081,8 +1180,105 @@ label{
   .fourth-col-1::before {
     left: 50px;
   }
-  .price-exchange {
-    left: 60%;
+  .product-title{
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .product-price__inner{
+    padding-top: 25px;
+  }
+  .product-price__inner {
+    display: block;
+  }
+.product-price {
+  width: 100%;
+  text-align: center;
+  }
+  .product-title{
+    text-align: center;
+  }
+  .add_to_card-product{
+    float: right;
+    margin-left: 0;
+  }
+  .images-for-product{
+    left: 40px;
+  }
+  .images-for-product img {
+    width: 60%;
+    height: auto;
+  }
+  .product-counter__inner{
+    padding-bottom: 40px;
+  }
+  .specifications{
+    height: 300px;
+  }
+  .related__bottom__inner{
+    display: block;
+  }
+  .related_counter__inner{
+    width: 100%;
+  }
+  .related__item_to_card{
+    float: none;
+  }
+}
+@media (max-width: 530px){
+  .product__art-num{
+    padding-right: 0;
+  }
+  .product__inner{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .product-info-text p{
+    font-size: 15px;
+  }
+}
+@media(max-width:460px){
+  .product__item-inner{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .add_to_card-inner{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .breadcrumbs{
+    padding-left: 20px;
+  }
+  .product-title{
+    font-size: 27px;
+    line-height: 35px;
+  }
+  .product-counter__inner{
+    padding-top: 20px;
+  }
+  .add_to_card-product{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .info-title{
+    text-align: center;
+  }
+  .specifications{
+    height: 640px;
+  }
+  .specification-name, .specification-value{
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .specifications ul li{
+    padding-bottom: 15px;
+  }
+  .related__item-inner > img{
+    width: 80%;
   }
 }
 @media (max-width: 420px) {
@@ -1110,8 +1306,26 @@ label{
   .fifth-section {
     padding-bottom: 0;
   }
-  .price-exchange {
-    left: 65%;
+  .product__points-stick{
+    display: none;
+  }
+  .product__points{
+    padding: 35px 10px 0 10px
+  }
+  .specifications{
+    height: 640px;
+  }
+  .product-art__inner{
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  .related__item_to_card{
+    width: 120px;
+    height: 30px;
+  }
+  .related__item-inner{
+    width: 75%;
   }
 }
 
@@ -1146,4 +1360,14 @@ label{
   .popular__items{
     padding-bottom: 0px;
   }
+  .product-photo{
+    width: 50%;
+  }
+  .images-for-product{
+    left: 20px;
+  }
+  .product__inner {
+    padding-left: 10px;
+    padding-right: 10px;
+}
 }
