@@ -135,7 +135,6 @@ h2 {
   font-size: 14px;
   height: 55px;
   text-align: center;
-  font-family: 'GothamPro-bold';
   justify-content: space-between;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -535,19 +534,85 @@ footer {
   margin-top: 15px;
 }
 
-/*.product__points-item{
+.product__inner{
+  background-color: #fff;
+  margin-top: 45px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+}
+
+.product-title{
+  font-family: 'GothamPro-bold';
+  font-size: 35px;
+  line-height: 45px;
+  padding-top: 0;
+}
+
+.product-art__inner{
+  width: 55%;
+  font-family: "GothamPRO-med";
+  line-height: 28px;
+  letter-spacing: -1px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product__art-num{
+ padding-right: 30%;
+}
+
+.product__art-stock img{
+  width: 13px;
+  height: 11px;
+  margin-bottom: 2px;
+  margin-right: 2px;
+}
+
+.product__art-stock{
+  color: #46af35;
+}
+
+.product-price__inner{
+  padding-top: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-price{
+  font-size: 30px;
   position: relative;
 }
 
-.product__points-item:after{
-  content: "";
+.product-price-exchange{
   position: absolute;
-  background-image: url(../img/stick.png);
-  width: 45px;
-  height: 1px;
-  left: -85px;
+  top: 0;
+  right: -30px;
 }
-*/
+
+.product-counter__inner{
+  font-size: 23px;
+  padding-right: 5%;
+}
+
+.add_to_card-product{
+  margin-top: 0px;
+  font-family: 'GothamPro-bold';
+  font-size: 14px;
+  width: 170px;
+  height: 47px;
+  text-transform: uppercase;
+  background-color: #ab4e44;
+  color: #fff;
+  border-radius: 30px;
+  margin-left: 30px;
+}
+
+.add_to_card-product:hover{
+  background-color: #000;
+}
+
+
 /*СТИЛИ ДЛЯ СТРАНИЦЫ ТОВАРА*/
 
 @media (max-width: 1210px) {

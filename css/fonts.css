@@ -40,8 +40,10 @@
 
 @font-face {
   font-family: "GothamPRO-med";
-  src: url("../fonts/GothaProMed.otf") format("otf"),
-    url("../fonts/GothaProMed.ttf") format("ttf");
+  src: url("../fonts/GothamProMed.eot") format("eot"),
+    url("../fonts/GothaProMed.otf") format("otf"),
+    url("../fonts/GothamProMed.ttf") format("ttf"),
+    url("../fonts/GothamProMed.woff") format("woff");
 }
 
 @font-face {
@@ -55,4 +57,12 @@
   src: url("../fonts/GothamPro.eot") format("eot"), 
   url("../fonts/GothamPro.ttf") format("ttf"),
   url("../fonts/GothamPro.woff") format("woff");
+}
+
+@font-face {
+	font-family: 'Conv_RUBSN';
+	src: url('../fonts/RUBSN.eot');
+	src: local('☺'), url('../fonts/RUBSN.woff') format('woff'), url('../fonts/RUBSN.ttf') format('truetype'), url('../fonts/RUBSN.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
