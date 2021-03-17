@@ -485,7 +485,7 @@ footer {
 
 /*СТИЛИ ДЛЯ СТРАНИЦЫ ТОВАРА*/
 
-.bg-product{
+.breadcrumbs-section{
   background-color: #f4f4f4;
 }
 
@@ -512,6 +512,11 @@ footer {
 
 .padding-left-none{
   padding-left: 0;
+}
+
+.product-section{
+  background-color: #f4f4f4;
+  padding-bottom: 80px;
 }
 
 .product-photo{
@@ -689,6 +694,135 @@ label{
 
 .product-info-text:last-child{
   padding-bottom: 30px;
+}
+
+.related-items-title{
+  font-family: 'GothamPro-bold';
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  padding-bottom: 55px;
+}
+
+.related-items-title-1{
+  padding-top: 75px;
+}
+
+.related__item-inner{
+  font-family: 'GothamPro-bold';
+  text-align: center;
+  height: 440px;
+  padding-left: 25px;
+  padding-right: 25px;
+  position: relative;
+}
+
+.related__item-status{
+  position: absolute;
+  width: 60px;
+  height: 20px;
+  font-size: 10px;
+  text-transform: uppercase;
+  top: 20px;
+  padding-top: 4px;
+  border-radius: 20px;
+}
+
+#status-sale{
+  background-color: #ffd200;
+}
+
+#status-new{
+  width: 80px;
+  background-color: #ef1150;
+  color: #fff;
+}
+
+.related__item-inner > img{
+  margin-top: 75px;
+  width: 60%;
+  height: 180px;
+}
+
+.related__item-art {
+  font-family: "GothamPro-reg";
+  color: #9a9a9a;
+  text-align: left;
+  padding-top: 40px;
+  letter-spacing: -1px;
+}
+
+.related-items_row{
+  position: relative;
+  margin-bottom: 100px;
+  height: 460px;
+}
+
+.related-items_row > div{
+  border-left: 1px solid #d6d6d6;
+}
+
+.related__item_to_card{
+  width: 160px;
+  height: 40px;
+  border-radius: 30px;
+  margin-top: 20px;
+  float: right;
+  text-transform: uppercase;
+  background-color: #ab4e44;
+  color: #fff;
+  font-size: 12px;
+}
+
+.related__item_to_card:hover{
+  background-color: #000;
+}
+
+.related__item-first{
+  font-family: 'GothamPro-bold';
+  position: absolute;
+  width: 392px;
+  left: -400px;
+  text-align: center;
+  height: 498px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.related__item-first > img{
+  margin-top: 75px;
+  width: 187px;
+  height: 180px;
+}
+
+.related__item-first .related__item_to_card{
+  margin-right: 25px;
+}
+
+.related__item-last{
+  font-family: 'GothamPro-bold';
+  position: absolute;
+  width: 392px;
+  right: -400px;
+  text-align: center;
+  height: 498px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-right: 1px solid #d6d6d6;
+}
+
+.related__item-last > img{
+  margin-top: 75px;
+  width: 187px;
+  height: 180px;
+}
+
+.related__item-last .related__item_to_card{
+  margin-right: 25px;
+}
+
+.related-items-title-2{
+  padding-top: 70px;
 }
 
 /*СТИЛИ ДЛЯ СТРАНИЦЫ ТОВАРА*/
