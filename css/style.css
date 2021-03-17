@@ -577,6 +577,7 @@ footer {
   padding-top: 45px;
   display: flex;
   justify-content: space-between;
+  padding-bottom: 40px;
 }
 
 .product-price{
@@ -612,6 +613,83 @@ footer {
   background-color: #000;
 }
 
+.info-title{
+  font-family: "MuseoSansCyrl-900";
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: -1px;
+  padding-bottom: 5px;
+}
+
+.checkbox-section{
+  font-family: "MuseoSansCyrl-300";
+  letter-spacing: -1px;
+  padding-bottom: 45px;
+}
+
+label{
+  display: block;
+  margin-bottom: 5px;
+  margin-left: 35px;
+}
+
+.product-check{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.check-style{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000;
+  margin-left: -35px;
+}
+
+.product-check:checked + .check-style::before{
+  content: "";
+  width: 14px;
+  height: 14px;
+  background-color: #b13d2f;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.specifications{
+  height: 290px;
+  font-family: "MuseoSansCyrl-300";
+  letter-spacing: -1px;
+  line-height: 26px;
+}
+
+.specification-name{
+  float: left;
+  width: 50%;
+}
+
+.specification-value{
+  float: right;
+  width: 50%;
+}
+
+.product-info-text{
+  font-family: "Gothampro-reg";
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.product-info-text p{
+  margin-block-end: 1.8em;
+}
+
+.product-info-text:last-child{
+  padding-bottom: 30px;
+}
 
 /*СТИЛИ ДЛЯ СТРАНИЦЫ ТОВАРА*/
 
