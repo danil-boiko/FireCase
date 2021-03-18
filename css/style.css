@@ -161,6 +161,10 @@ h2 {
   color: #fff;
 }
 
+.menu__mobile {
+  display: none;
+}
+
 /*СТИЛИ ДЛЯ ХЕДЕРА*/
 
 /*СТИЛИ ДЛЯ ГЛАВНОЙ СТРАНИЦЫ*/
@@ -901,21 +905,6 @@ label {
     width: 130px;
     height: 45px;
   }
-  .menu__list-item-1 {
-    padding-left: 0;
-  }
-  .menu__list-item {
-    padding-left: 15px;
-    padding-right: 15px;
-    font-size: 14px;
-  }
-  /*.menu__list-item_dots {
-    display: none;
-  }*/
-  .menu__list-item-3,
-  .menu__list-item-5 {
-    padding-top: 12px !important;
-  }
   .padding_for_shop_row_1 {
     margin-top: 50px;
   }
@@ -969,6 +958,11 @@ label {
   .header-top {
     text-align: center;
   }
+  .menu__list-link {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .header-card-counter {
     left: 90px;
   }
@@ -984,9 +978,6 @@ label {
   }
   .search {
     padding-left: 15px;
-  }
-  .menu__list-item-1 img {
-    display: none;
   }
   .grid-container {
     grid-template-areas:
@@ -1030,8 +1021,40 @@ label {
   }
 }
 @media (max-width: 840px) {
+  .header-bottom {
+    background-color: #fff;
+  }
   .menu {
     display: none;
+  }
+  .menu__mobile.menu__mobile--active {
+    display: block;
+    padding: 0;
+    text-align: center;
+  }
+  .menu__list {
+    display: block;
+    transition: all 0.3s;
+    color: #fff;
+    background: #000;
+    text-align: center;
+  }
+  .menu__list-link {
+    display: block;
+  }
+  .menu__btn {
+    display: block;
+    position: absolute;
+    background-color: black;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+  }
+  .menu__list-item {
+    padding-top: 0px;
+    width: 100%;
+    padding-bottom: 0px;
   }
 }
 @media (max-width: 770px) {
@@ -1086,52 +1109,6 @@ label {
 }
 
 @media (max-width: 765px) {
-  .menu {
-    display: block;
-    padding: 0;
-    text-align: center;
-  }
-  .menu__list {
-    display: block;
-    transform: translateY(-1500%);
-    transition: all 0.3s;
-    color: #fff;
-  }
-  .menu__list.menu__list--active {
-    transform: translateY(0);
-    background: #000;
-    text-align: center;
-    height: 120%;
-    margin-bottom: 20px;
-  }
-  .menu__list-link-1 {
-    float: none;
-    padding-top: 20px;
-  }
-  .menu__list-link {
-    display: block;
-  }
-  .menu__btn {
-    display: block;
-    position: absolute;
-    background-color: black;
-    top: 10px;
-    right: 10px;
-    width: 40px;
-    height: 40px;
-  }
-  .menu__list-item {
-    padding-top: 15px;
-  }
-  .menu__list-item-7 {
-    padding-bottom: 20px;
-  }
-  .menu__list-item:hover,
-  .menu__list-item-1:hover,
-  .menu__list-item-3:hover,
-  .menu__list-item-5:hover {
-    background-color: #000;
-  }
   .grid-container {
     grid-template-areas:
       "a a d"
