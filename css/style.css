@@ -156,13 +156,44 @@ h2 {
   padding-right: 10px;
 }
 
-.menu__list-item:hover {
+.menu__list-item:hover,
+.additional-menu li:hover {
   background-color: #ab4e44;
   color: #fff;
 }
 
 .menu__mobile {
   display: none;
+}
+
+.additional__list-menu-item {
+  position: relative;
+}
+
+.additional-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background-color: #333333;
+  z-index: 10;
+}
+
+.menu .menu__list .menu__list-item:hover > .additional-menu {
+  display: inherit;
+}
+
+.additional-menu li {
+  min-width: 250px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.additional-menu li a {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 33px;
+  padding-right: 33px;
 }
 
 /*СТИЛИ ДЛЯ ХЕДЕРА*/
