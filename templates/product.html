@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/flickity.css">
 </head>
 
 <body>
@@ -258,27 +259,12 @@
         </div>
     </section>
     <section>
-        <div class="container">
-            <div class="related-items-title related-items-title-1">С этим товаром покупают</div>
-            <div class="related-items_row">
-                <div class="related__item-first">
-                    <div id="status-sale" class="related__item-status">Акция</div>
-                    <img src="../img/related-item-1.png" alt="">
-                    <div class="related__item-art">Артикул 123456</div>
-                    <div class="shop__item-name">Мангал Редлайнер Комфорт</div>
-                    <div class="shop__item-price">21 990 ₽
-                    </div>
-                    <div class="related__bottom__inner">
-                        <div class="related_counter__inner">
-                            <button class="related__item-counter"><img src="../img/minus.png" alt=""></button>
-                            <div class="related__item-num">1</div>
-                            <button class="related__item-counter"><img src="../img/plus.png" alt=""></button>
-                        </div>
-                        <div class="related-button__inner"><button class="related__item_to_card">В корзину</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+        <div class="related-items-title related-items-title-1">С этим товаром покупают</div>
+        <div class="slider-container"
+            data-flickity='{ "cellAlign": "left", "contain": true, "selectedAttraction": "0.01", "friction": "0.15", "freeScroll": true,
+            "freeScrollFriction": "0.05", "autoPlay": true, "autoPlay": 8000, "pageDots": false, "prevNextButtons": false }'>
+            <div class="slider-cell">
+                <div class="cell-item__inner">
                     <div class="related__item-inner">
                         <div id="status-sale" class="related__item-status">Акция</div>
                         <img src="../img/related-item-1.png" alt="">
@@ -297,7 +283,26 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                <div class="cell-item__inner">
+                    <div class="related__item-inner">
+                        <div id="status-sale" class="related__item-status">Акция</div>
+                        <img src="../img/related-item-1.png" alt="">
+                        <div class="related__item-art">Артикул 123456</div>
+                        <div class="shop__item-name">Мангал Редлайнер Комфорт</div>
+                        <div class="shop__item-price">21 990 ₽
+                        </div>
+                        <div class="related__bottom__inner">
+                            <div class="related_counter__inner">
+                                <button class="related__item-counter"><img src="../img/minus.png" alt=""></button>
+                                <div class="related__item-num">1</div>
+                                <button class="related__item-counter"><img src="../img/plus.png" alt=""></button>
+                            </div>
+                            <div class="related-button__inner"><button class="related__item_to_card">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-item__inner">
                     <div class="related__item-inner">
                         <div id="status-new" class="related__item-status">Новинка</div>
                         <img src="../img/related-item-2.png" alt="">
@@ -316,10 +321,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="container__product-last col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                <div class="cell-item__inner">
                     <div class="related__item-inner">
-                        <div id="status-new" class="related__item-status">Новинка</div>
-                        <img src="../img/related-item-2.png" alt="">
+                        <div id="status-sale" class="related__item-status">Акция</div>
+                        <img src="../img/related-item-1.png" alt="">
                         <div class="related__item-art">Артикул 123456</div>
                         <div class="shop__item-name">Мангал Редлайнер Комфорт</div>
                         <div class="shop__item-price">21 990 ₽
@@ -335,52 +340,235 @@
                         </div>
                     </div>
                 </div>
-                <div class="related__item-last">
-                    <div id="status-new" class="related__item-status">Новинка</div>
-                    <img src="../img/related-item-2.png" alt="">
-                    <div class="related__item-art">Артикул 123456</div>
-                    <div class="shop__item-name">Мангал Редлайнер Комфорт</div>
-                    <div class="shop__item-price">21 990 ₽
-                    </div>
-                    <div class="related__bottom__inner">
-                        <div class="related_counter__inner">
-                            <button class="related__item-counter"><img src="../img/minus.png" alt=""></button>
-                            <div class="related__item-num">1</div>
-                            <button class="related__item-counter"><img src="../img/plus.png" alt=""></button>
+                <div class="cell-item__inner">
+                    <div class="related__item-inner">
+                        <div id="status-new" class="related__item-status">Новинка</div>
+                        <img src="../img/related-item-2.png" alt="">
+                        <div class="related__item-art">Артикул 123456</div>
+                        <div class="shop__item-name">Мангал Редлайнер Комфорт</div>
+                        <div class="shop__item-price">21 990 ₽
                         </div>
-                        <div class="related-button__inner"><button class="related__item_to_card">В корзину</button>
+                        <div class="related__bottom__inner">
+                            <div class="related_counter__inner">
+                                <button class="related__item-counter"><img src="../img/minus.png" alt=""></button>
+                                <div class="related__item-num">1</div>
+                                <button class="related__item-counter"><img src="../img/plus.png" alt=""></button>
+                            </div>
+                            <div class="related-button__inner"><button class="related__item_to_card">В корзину</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="slider-cell">
+                <div class="cell-item__inner">
+                    <div class="related__item-inner">
+                        <div id="status-new" class="related__item-status">Новинка</div>
+                        <img src="../img/related-item-2.png" alt="">
+                        <div class="related__item-art">Артикул 123456</div>
+                        <div class="shop__item-name">Мангал Редлайнер Комфорт</div>
+                        <div class="shop__item-price">21 990 ₽
+                        </div>
+                        <div class="related__bottom__inner">
+                            <div class="related_counter__inner">
+                                <button class="related__item-counter"><img src="../img/minus.png" alt=""></button>
+                                <div class="related__item-num">1</div>
+                                <button class="related__item-counter"><img src="../img/plus.png" alt=""></button>
+                            </div>
+                            <div class="related-button__inner"><button class="related__item_to_card">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-item__inner">
+                    <div class="related__item-inner">
+                        <div id="status-sale" class="related__item-status">Акция</div>
+                        <img src="../img/related-item-1.png" alt="">
+                        <div class="related__item-art">Артикул 123456</div>
+                        <div class="shop__item-name">Мангал Редлайнер Комфорт</div>
+                        <div class="shop__item-price">21 990 ₽
+                        </div>
+                        <div class="related__bottom__inner">
+                            <div class="related_counter__inner">
+                                <button class="related__item-counter"><img src="../img/minus.png" alt=""></button>
+                                <div class="related__item-num">1</div>
+                                <button class="related__item-counter"><img src="../img/plus.png" alt=""></button>
+                            </div>
+                            <div class="related-button__inner"><button class="related__item_to_card">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-item__inner">
+                    <div class="related__item-inner">
+                        <div id="status-new" class="related__item-status">Новинка</div>
+                        <img src="../img/related-item-2.png" alt="">
+                        <div class="related__item-art">Артикул 123456</div>
+                        <div class="shop__item-name">Мангал Редлайнер Комфорт</div>
+                        <div class="shop__item-price">21 990 ₽
+                        </div>
+                        <div class="related__bottom__inner">
+                            <div class="related_counter__inner">
+                                <button class="related__item-counter"><img src="../img/minus.png" alt=""></button>
+                                <div class="related__item-num">1</div>
+                                <button class="related__item-counter"><img src="../img/plus.png" alt=""></button>
+                            </div>
+                            <div class="related-button__inner"><button class="related__item_to_card">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-item__inner">
+                    <div class="related__item-inner">
+                        <div id="status-new" class="related__item-status">Новинка</div>
+                        <img src="../img/related-item-2.png" alt="">
+                        <div class="related__item-art">Артикул 123456</div>
+                        <div class="shop__item-name">Мангал Редлайнер Комфорт</div>
+                        <div class="shop__item-price">21 990 ₽
+                        </div>
+                        <div class="related__bottom__inner">
+                            <div class="related_counter__inner">
+                                <button class="related__item-counter"><img src="../img/minus.png" alt=""></button>
+                                <div class="related__item-num">1</div>
+                                <button class="related__item-counter"><img src="../img/plus.png" alt=""></button>
+                            </div>
+                            <div class="related-button__inner"><button class="related__item_to_card">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-item__inner">
+                    <div class="related__item-inner">
+                        <div id="status-new" class="related__item-status">Новинка</div>
+                        <img src="../img/related-item-2.png" alt="">
+                        <div class="related__item-art">Артикул 123456</div>
+                        <div class="shop__item-name">Мангал Редлайнер Комфорт</div>
+                        <div class="shop__item-price">21 990 ₽
+                        </div>
+                        <div class="related__bottom__inner">
+                            <div class="related_counter__inner">
+                                <button class="related__item-counter"><img src="../img/minus.png" alt=""></button>
+                                <div class="related__item-num">1</div>
+                                <button class="related__item-counter"><img src="../img/plus.png" alt=""></button>
+                            </div>
+                            <div class="related-button__inner"><button class="related__item_to_card">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-cell">
+                <div class="cell-item__inner">
+                    <div class="related__item-inner">
+                        <div id="status-sale" class="related__item-status">Акция</div>
+                        <img src="../img/related-item-1.png" alt="">
+                        <div class="related__item-art">Артикул 123456</div>
+                        <div class="shop__item-name">Мангал Редлайнер Комфорт</div>
+                        <div class="shop__item-price">21 990 ₽
+                        </div>
+                        <div class="related__bottom__inner">
+                            <div class="related_counter__inner">
+                                <button class="related__item-counter"><img src="../img/minus.png" alt=""></button>
+                                <div class="related__item-num">1</div>
+                                <button class="related__item-counter"><img src="../img/plus.png" alt=""></button>
+                            </div>
+                            <div class="related-button__inner"><button class="related__item_to_card">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-item__inner">
+                    <div class="related__item-inner">
+                        <div id="status-new" class="related__item-status">Новинка</div>
+                        <img src="../img/related-item-2.png" alt="">
+                        <div class="related__item-art">Артикул 123456</div>
+                        <div class="shop__item-name">Мангал Редлайнер Комфорт</div>
+                        <div class="shop__item-price">21 990 ₽
+                        </div>
+                        <div class="related__bottom__inner">
+                            <div class="related_counter__inner">
+                                <button class="related__item-counter"><img src="../img/minus.png" alt=""></button>
+                                <div class="related__item-num">1</div>
+                                <button class="related__item-counter"><img src="../img/plus.png" alt=""></button>
+                            </div>
+                            <div class="related-button__inner"><button class="related__item_to_card">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-item__inner cell-item__inner-active">
+                    <div class="related__item-inner">
+                        <div id="status-new" class="related__item-status">Новинка</div>
+                        <img src="../img/related-item-2.png" alt="">
+                        <div class="related__item-art">Артикул 123456</div>
+                        <div class="shop__item-name">Мангал Редлайнер Комфорт</div>
+                        <div class="shop__item-price">21 990 ₽
+                        </div>
+                        <div class="related__bottom__inner">
+                            <div class="related_counter__inner">
+                                <button class="related__item-counter"><img src="../img/minus.png" alt=""></button>
+                                <div class="related__item-num">1</div>
+                                <button class="related__item-counter"><img src="../img/plus.png" alt=""></button>
+                            </div>
+                            <div class="related-button__inner"><button class="related__item_to_card">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-item__inner cell-item__inner-active">
+                    <div class="related__item-inner">
+                        <div id="status-sale" class="related__item-status">Акция</div>
+                        <img src="../img/related-item-1.png" alt="">
+                        <div class="related__item-art">Артикул 123456</div>
+                        <div class="shop__item-name">Мангал Редлайнер Комфорт</div>
+                        <div class="shop__item-price">21 990 ₽
+                        </div>
+                        <div class="related__bottom__inner">
+                            <div class="related_counter__inner">
+                                <button class="related__item-counter"><img src="../img/minus.png" alt=""></button>
+                                <div class="related__item-num">1</div>
+                                <button class="related__item-counter"><img src="../img/plus.png" alt=""></button>
+                            </div>
+                            <div class="related-button__inner"><button class="related__item_to_card">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-item__inner cell-item__inner-last">
+                    <div class="related__item-inner">
+                        <div id="status-new" class="related__item-status">Новинка</div>
+                        <img src="../img/related-item-2.png" alt="">
+                        <div class="related__item-art">Артикул 123456</div>
+                        <div class="shop__item-name">Мангал Редлайнер Комфорт</div>
+                        <div class="shop__item-price">21 990 ₽
+                        </div>
+                        <div class="related__bottom__inner">
+                            <div class="related_counter__inner">
+                                <button class="related__item-counter"><img src="../img/minus.png" alt=""></button>
+                                <div class="related__item-num">1</div>
+                                <button class="related__item-counter"><img src="../img/plus.png" alt=""></button>
+                            </div>
+                            <div class="related-button__inner"><button class="related__item_to_card">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <section>
-        <div class="container">
-            <div class="related-items-title related-items-title-2">Похожие товары</div>
-            <div class="related-items_row">
-                <div class="related__item-first">
-                    <div id="status-sale" class="related__item-status">Акция</div>
-                    <img src="../img/related-item-1.png" alt="">
-                    <div class="related__item-art">Артикул 123456</div>
-                    <div class="shop__item-name">Мангал Редлайнер Комфорт</div>
-                    <div class="shop__item-price">21 990
-                    </div>
-                    <div class="item_to_card_inner">
-                        <div class="counter__inner">
-                            <button class="shop__item-counter"><img src="../img/minus.png" alt=""></button>
-                            <div class="shop__item-num">1</div>
-                            <button class="shop__item-counter"><img src="../img/plus.png" alt=""></button>
-                        </div>
-                        <button class="related__item_to_card">В корзину</button>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+        <div class="related-items-title related-items-title-1 item-pd-top">Похожие товары</div>
+        <div class="slider-container"
+            data-flickity='{ "cellAlign": "left", "contain": true, "selectedAttraction": "0.01", "friction": "0.15", "freeScroll": true,
+                "freeScrollFriction": "0.05", "autoPlay": true, "autoPlay": 12000, "pageDots": false, "prevNextButtons": false }'>
+            <div class="slider-cell">
+                <div class="cell-item__inner">
                     <div class="related__item-inner">
                         <div id="status-sale" class="related__item-status">Акция</div>
                         <img src="../img/related-item-1.png" alt="">
                         <div class="related__item-art">Артикул 123456</div>
                         <div class="shop__item-name">Мангал Редлайнер Комфорт</div>
-                        <div class="shop__item-price">21 990
+                        <div class="shop__item-price">21 990 ₽
                         </div>
                         <div class="related__bottom__inner">
                             <div class="related_counter__inner">
@@ -393,7 +581,26 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                <div class="cell-item__inner">
+                    <div class="related__item-inner">
+                        <div id="status-sale" class="related__item-status">Акция</div>
+                        <img src="../img/related-item-1.png" alt="">
+                        <div class="related__item-art">Артикул 123456</div>
+                        <div class="shop__item-name">Мангал Редлайнер Комфорт</div>
+                        <div class="shop__item-price">21 990 ₽
+                        </div>
+                        <div class="related__bottom__inner">
+                            <div class="related_counter__inner">
+                                <button class="related__item-counter"><img src="../img/minus.png" alt=""></button>
+                                <div class="related__item-num">1</div>
+                                <button class="related__item-counter"><img src="../img/plus.png" alt=""></button>
+                            </div>
+                            <div class="related-button__inner"><button class="related__item_to_card">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-item__inner">
                     <div class="related__item-inner">
                         <div id="status-new" class="related__item-status">Новинка</div>
                         <img src="../img/related-item-2.png" alt="">
@@ -412,10 +619,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="container__product-last col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                <div class="cell-item__inner">
                     <div class="related__item-inner">
-                        <div id="status-new" class="related__item-status">Новинка</div>
-                        <img src="../img/related-item-2.png" alt="">
+                        <div id="status-sale" class="related__item-status">Акция</div>
+                        <img src="../img/related-item-1.png" alt="">
                         <div class="related__item-art">Артикул 123456</div>
                         <div class="shop__item-name">Мангал Редлайнер Комфорт</div>
                         <div class="shop__item-price">21 990 ₽
@@ -431,25 +638,223 @@
                         </div>
                     </div>
                 </div>
-                <div class="related__item-last">
-                    <div id="status-new" class="related__item-status">Новинка</div>
-                    <img src="../img/related-item-2.png" alt="">
-                    <div class="related__item-art">Артикул 123456</div>
-                    <div class="shop__item-name">Мангал Редлайнер Комфорт</div>
-                    <div class="shop__item-price">21 990 ₽
-                    </div>
-                    <div class="related__bottom__inner">
-                        <div class="related_counter__inner">
-                            <button class="related__item-counter"><img src="../img/minus.png" alt=""></button>
-                            <div class="related__item-num">1</div>
-                            <button class="related__item-counter"><img src="../img/plus.png" alt=""></button>
+                <div class="cell-item__inner">
+                    <div class="related__item-inner">
+                        <div id="status-new" class="related__item-status">Новинка</div>
+                        <img src="../img/related-item-2.png" alt="">
+                        <div class="related__item-art">Артикул 123456</div>
+                        <div class="shop__item-name">Мангал Редлайнер Комфорт</div>
+                        <div class="shop__item-price">21 990 ₽
                         </div>
-                        <div class="related-button__inner"><button class="related__item_to_card">В корзину</button>
+                        <div class="related__bottom__inner">
+                            <div class="related_counter__inner">
+                                <button class="related__item-counter"><img src="../img/minus.png" alt=""></button>
+                                <div class="related__item-num">1</div>
+                                <button class="related__item-counter"><img src="../img/plus.png" alt=""></button>
+                            </div>
+                            <div class="related-button__inner"><button class="related__item_to_card">В корзину</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="slider-cell">
+                <div class="cell-item__inner">
+                    <div class="related__item-inner">
+                        <div id="status-new" class="related__item-status">Новинка</div>
+                        <img src="../img/related-item-2.png" alt="">
+                        <div class="related__item-art">Артикул 123456</div>
+                        <div class="shop__item-name">Мангал Редлайнер Комфорт</div>
+                        <div class="shop__item-price">21 990 ₽
+                        </div>
+                        <div class="related__bottom__inner">
+                            <div class="related_counter__inner">
+                                <button class="related__item-counter"><img src="../img/minus.png" alt=""></button>
+                                <div class="related__item-num">1</div>
+                                <button class="related__item-counter"><img src="../img/plus.png" alt=""></button>
+                            </div>
+                            <div class="related-button__inner"><button class="related__item_to_card">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-item__inner">
+                    <div class="related__item-inner">
+                        <div id="status-sale" class="related__item-status">Акция</div>
+                        <img src="../img/related-item-1.png" alt="">
+                        <div class="related__item-art">Артикул 123456</div>
+                        <div class="shop__item-name">Мангал Редлайнер Комфорт</div>
+                        <div class="shop__item-price">21 990 ₽
+                        </div>
+                        <div class="related__bottom__inner">
+                            <div class="related_counter__inner">
+                                <button class="related__item-counter"><img src="../img/minus.png" alt=""></button>
+                                <div class="related__item-num">1</div>
+                                <button class="related__item-counter"><img src="../img/plus.png" alt=""></button>
+                            </div>
+                            <div class="related-button__inner"><button class="related__item_to_card">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-item__inner">
+                    <div class="related__item-inner">
+                        <div id="status-new" class="related__item-status">Новинка</div>
+                        <img src="../img/related-item-2.png" alt="">
+                        <div class="related__item-art">Артикул 123456</div>
+                        <div class="shop__item-name">Мангал Редлайнер Комфорт</div>
+                        <div class="shop__item-price">21 990 ₽
+                        </div>
+                        <div class="related__bottom__inner">
+                            <div class="related_counter__inner">
+                                <button class="related__item-counter"><img src="../img/minus.png" alt=""></button>
+                                <div class="related__item-num">1</div>
+                                <button class="related__item-counter"><img src="../img/plus.png" alt=""></button>
+                            </div>
+                            <div class="related-button__inner"><button class="related__item_to_card">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-item__inner">
+                    <div class="related__item-inner">
+                        <div id="status-new" class="related__item-status">Новинка</div>
+                        <img src="../img/related-item-2.png" alt="">
+                        <div class="related__item-art">Артикул 123456</div>
+                        <div class="shop__item-name">Мангал Редлайнер Комфорт</div>
+                        <div class="shop__item-price">21 990 ₽
+                        </div>
+                        <div class="related__bottom__inner">
+                            <div class="related_counter__inner">
+                                <button class="related__item-counter"><img src="../img/minus.png" alt=""></button>
+                                <div class="related__item-num">1</div>
+                                <button class="related__item-counter"><img src="../img/plus.png" alt=""></button>
+                            </div>
+                            <div class="related-button__inner"><button class="related__item_to_card">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-item__inner">
+                    <div class="related__item-inner">
+                        <div id="status-new" class="related__item-status">Новинка</div>
+                        <img src="../img/related-item-2.png" alt="">
+                        <div class="related__item-art">Артикул 123456</div>
+                        <div class="shop__item-name">Мангал Редлайнер Комфорт</div>
+                        <div class="shop__item-price">21 990 ₽
+                        </div>
+                        <div class="related__bottom__inner">
+                            <div class="related_counter__inner">
+                                <button class="related__item-counter"><img src="../img/minus.png" alt=""></button>
+                                <div class="related__item-num">1</div>
+                                <button class="related__item-counter"><img src="../img/plus.png" alt=""></button>
+                            </div>
+                            <div class="related-button__inner"><button class="related__item_to_card">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-cell">
+                <div class="cell-item__inner">
+                    <div class="related__item-inner">
+                        <div id="status-sale" class="related__item-status">Акция</div>
+                        <img src="../img/related-item-1.png" alt="">
+                        <div class="related__item-art">Артикул 123456</div>
+                        <div class="shop__item-name">Мангал Редлайнер Комфорт</div>
+                        <div class="shop__item-price">21 990 ₽
+                        </div>
+                        <div class="related__bottom__inner">
+                            <div class="related_counter__inner">
+                                <button class="related__item-counter"><img src="../img/minus.png" alt=""></button>
+                                <div class="related__item-num">1</div>
+                                <button class="related__item-counter"><img src="../img/plus.png" alt=""></button>
+                            </div>
+                            <div class="related-button__inner"><button class="related__item_to_card">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-item__inner">
+                    <div class="related__item-inner">
+                        <div id="status-new" class="related__item-status">Новинка</div>
+                        <img src="../img/related-item-2.png" alt="">
+                        <div class="related__item-art">Артикул 123456</div>
+                        <div class="shop__item-name">Мангал Редлайнер Комфорт</div>
+                        <div class="shop__item-price">21 990 ₽
+                        </div>
+                        <div class="related__bottom__inner">
+                            <div class="related_counter__inner">
+                                <button class="related__item-counter"><img src="../img/minus.png" alt=""></button>
+                                <div class="related__item-num">1</div>
+                                <button class="related__item-counter"><img src="../img/plus.png" alt=""></button>
+                            </div>
+                            <div class="related-button__inner"><button class="related__item_to_card">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-item__inner cell-item__inner-active">
+                    <div class="related__item-inner">
+                        <div id="status-sale" class="related__item-status">Акция</div>
+                        <img src="../img/related-item-1.png" alt="">
+                        <div class="related__item-art">Артикул 123456</div>
+                        <div class="shop__item-name">Мангал Редлайнер Комфорт</div>
+                        <div class="shop__item-price">21 990 ₽
+                        </div>
+                        <div class="related__bottom__inner">
+                            <div class="related_counter__inner">
+                                <button class="related__item-counter"><img src="../img/minus.png" alt=""></button>
+                                <div class="related__item-num">1</div>
+                                <button class="related__item-counter"><img src="../img/plus.png" alt=""></button>
+                            </div>
+                            <div class="related-button__inner"><button class="related__item_to_card">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-item__inner cell-item__inner-active">
+                    <div class="related__item-inner">
+                        <div id="status-new" class="related__item-status">Новинка</div>
+                        <img src="../img/related-item-2.png" alt="">
+                        <div class="related__item-art">Артикул 123456</div>
+                        <div class="shop__item-name">Мангал Редлайнер Комфорт</div>
+                        <div class="shop__item-price">21 990 ₽
+                        </div>
+                        <div class="related__bottom__inner">
+                            <div class="related_counter__inner">
+                                <button class="related__item-counter"><img src="../img/minus.png" alt=""></button>
+                                <div class="related__item-num">1</div>
+                                <button class="related__item-counter"><img src="../img/plus.png" alt=""></button>
+                            </div>
+                            <div class="related-button__inner"><button class="related__item_to_card">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell-item__inner cell-item__inner-last">
+                    <div class="related__item-inner">
+                        <div id="status-new" class="related__item-status">Новинка</div>
+                        <img src="../img/related-item-2.png" alt="">
+                        <div class="related__item-art">Артикул 123456</div>
+                        <div class="shop__item-name">Мангал Редлайнер Комфорт</div>
+                        <div class="shop__item-price">21 990 ₽
+                        </div>
+                        <div class="related__bottom__inner">
+                            <div class="related_counter__inner">
+                                <button class="related__item-counter"><img src="../img/minus.png" alt=""></button>
+                                <div class="related__item-num">1</div>
+                                <button class="related__item-counter"><img src="../img/plus.png" alt=""></button>
+                            </div>
+                            <div class="related-button__inner"><button class="related__item_to_card">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
     <footer>
         <div class="container">
             <div class=" col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-2">
@@ -568,7 +973,11 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
-<script src="../js/flickity.pkgd.min.js"></script>
+<script>
+    if (document.body.clientWidth > 1920) {
+        document.write("<script src=../js/flickity.pkgd.min.js>");
+    }
+</script>
 <script src="../js/main.js"></script>
 
 </html>

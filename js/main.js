@@ -60,6 +60,5 @@ $(function () {
         $('.md-modal-3').addClass('md-show');
         document.body.style.overflow = 'hidden';
     });
-
 });
 
