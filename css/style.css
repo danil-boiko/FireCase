@@ -30,6 +30,10 @@ h2 {
   font-size: 35px;
 }
 
+p {
+  margin-block-end: 0;
+}
+
 /*ГЛОБАЛЬНЫЕ СТИЛИ*/
 
 /*СТИЛИ ДЛЯ ХЕДЕРА*/
@@ -530,7 +534,6 @@ footer {
 
 .breadcrumbs__list {
   margin-block-start: 0;
-  margin-block-end: 0;
   font-size: 15px;
   line-height: 28px;
   font-family: "Gothampro-reg";
@@ -737,10 +740,6 @@ label {
   line-height: 25px;
 }
 
-.product-info-text p {
-  margin-block-end: 1.8em;
-}
-
 .product-info-text:last-child {
   padding-bottom: 30px;
 }
@@ -903,6 +902,135 @@ label {
 
 /*СТИЛИ ДЛЯ СТРАНИЦЫ ТОВАРА*/
 
+/*СТИЛИ ДЛЯ МОДАЛЬНОГО ОКНА ОПЛАТА-ДОСТАВКА-ГАРАНТИИ*/
+.md-modal-1,
+.md-modal-2,
+.md-modal-3 {
+  margin: auto;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 45%;
+  height: 100%;
+  z-index: 2000;
+  visibility: hidden;
+  background: #fff;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  overflow-y: auto;
+}
+
+.modal__inner {
+  padding-top: 120px;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.md-show {
+  visibility: visible;
+}
+
+.md-overlay {
+  position: fixed;
+  width: 55%;
+  height: 100%;
+  visibility: hidden;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  opacity: 0.25;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+.md-show ~ .md-overlay {
+  background: #000;
+  visibility: visible;
+}
+
+.md-effect-12 .modal__inner {
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+.md-show.md-effect-12 .modal__inner {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.md-trigger-1:hover,
+.md-trigger-2:hover,
+.md-trigger-3:hover {
+  cursor: pointer;
+}
+
+.modal-product-points {
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "GothamPro-bold";
+  text-transform: uppercase;
+  line-height: 30px;
+  letter-spacing: 2px;
+}
+
+.modal__points-stick {
+  height: 1px;
+  margin-top: 10px;
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+.modal__points-item.active {
+  border-bottom: 5px solid #ab4e44;
+}
+
+.modal-title {
+  font-size: 35px;
+  line-height: 45px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.modal__inner p {
+  font-family: "GothamPro-reg";
+  margin-block-start: 0;
+  font-size: 17px;
+  line-height: 25px;
+  padding-bottom: 30px;
+}
+
+.md-close-1,
+.md-close-2,
+.md-close-3 {
+  height: 35px;
+  background-color: transparent;
+  position: fixed;
+  top: 25px;
+  right: 30px;
+}
+
+.modal__points-item:hover {
+  cursor: pointer;
+}
+
+.modal__points-item.active:hover {
+  cursor: default;
+}
+
+/*СТИЛИ ДЛЯ МОДАЛЬНОГО ОКНА ОПЛАТА-ДОСТАВКА-ГАРАНТИИ*/
+
 @media (max-width: 1990px) {
   .related__item-first,
   .related__item-last {
@@ -910,6 +1038,14 @@ label {
   }
   .container__product-last {
     border-right: 1px solid #d6d6d6;
+  }
+}
+
+@media (max-width: 1500px) {
+  .modal__inner {
+    padding-top: 100px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
 
@@ -925,6 +1061,29 @@ label {
   }
   .product__points {
     padding: 130px 35px 0 35px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .modal__inner {
+    padding-top: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .md-modal-1,
+  .md-modal-2,
+  .md-modal-3 {
+    width: 50%;
+  }
+  .md-overlay {
+    width: 50%;
+  }
+  .modal__points-stick {
+    height: 1px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
   }
 }
 
@@ -983,6 +1142,14 @@ label {
 @media (max-width: 1024px) {
   .fourth-section {
     padding-bottom: 70px;
+  }
+  .md-modal-1,
+  .md-modal-2,
+  .md-modal-3 {
+    width: 75%;
+  }
+  .md-overlay {
+    width: 25%;
   }
 }
 @media (max-width: 990px) {
@@ -1087,6 +1254,9 @@ label {
     padding-top: 0px;
     width: 100%;
     padding-bottom: 0px;
+  }
+  .modal__points-stick {
+    display: none;
   }
 }
 @media (max-width: 770px) {
@@ -1232,6 +1402,22 @@ label {
   .related__item_to_card {
     float: none;
   }
+  .md-modal-1,
+  .md-modal-2,
+  .md-modal-3 {
+    width: 90%;
+  }
+  .md-overlay {
+    width: 10%;
+  }
+  .modal-title {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .modal__inner p {
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
 }
 @media (max-width: 530px) {
   .product__art-num {
@@ -1290,6 +1476,18 @@ label {
   .related__item-inner > img {
     width: 80%;
   }
+  .md-modal-1,
+  .md-modal-2,
+  .md-modal-3 {
+    width: 95%;
+  }
+  .md-overlay {
+    width: 5%;
+  }
+  .modal__inner {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 @media (max-width: 420px) {
   .social__inner {
@@ -1336,6 +1534,19 @@ label {
   }
   .related__item-inner {
     width: 75%;
+  }
+  .modal__inner {
+    padding-top: 60px;
+  }
+  .modal-product-points {
+    flex-direction: column;
+    padding-bottom: 100px;
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+  }
+  .modal__points-item {
+    margin-bottom: 10px;
   }
 }
 
