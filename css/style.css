@@ -904,76 +904,11 @@ label {
 
 /*СТИЛИ ДЛЯ МОДАЛЬНОГО ОКНА ОПЛАТА-ДОСТАВКА-ГАРАНТИИ*/
 
-.md-modal-1,
-.md-modal-2,
-.md-modal-3 {
-  margin: auto;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 45%;
-  height: 100%;
-  z-index: 2000;
-  visibility: hidden;
-  background: #fff;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  backface-visibility: hidden;
-  overflow-y: auto;
-}
-
 .modal__inner {
   padding-top: 120px;
   padding-left: 120px;
   padding-right: 120px;
-}
-
-.md-show {
-  visibility: visible;
-}
-
-.md-overlay {
-  position: fixed;
-  width: 55%;
-  height: 100%;
-  visibility: hidden;
-  top: 0;
-  right: 0;
-  z-index: 1000;
-  opacity: 0.25;
-  -webkit-transition: all 0.6s;
-  -moz-transition: all 0.6s;
-  transition: all 0.6s;
-}
-
-.md-show ~ .md-overlay {
-  background: #000;
-  visibility: visible;
-}
-
-.md-effect-12 .modal__inner {
-  -webkit-transform: scale(0.8);
-  -moz-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  transform: scale(0.8);
-  opacity: 0;
-  -webkit-transition: all 0.6s;
-  -moz-transition: all 0.6s;
-  transition: all 0.6s;
-}
-
-.md-show.md-effect-12 .modal__inner {
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  opacity: 1;
-}
-
-.md-trigger-1:hover,
-.md-trigger-2:hover,
-.md-trigger-3:hover {
-  cursor: pointer;
+  background-color: #fff;
 }
 
 .modal-product-points {
@@ -1012,9 +947,7 @@ label {
   padding-bottom: 30px;
 }
 
-.md-close-1,
-.md-close-2,
-.md-close-3 {
+.md-close {
   height: 35px;
   background-color: transparent;
   position: fixed;
@@ -1028,6 +961,14 @@ label {
 
 .modal__points-item.active:hover {
   cursor: default;
+}
+
+.modal-dialog {
+  margin: 0;
+  height: 100%;
+}
+.modal-content {
+  height: 100%;
 }
 
 /*СТИЛИ ДЛЯ МОДАЛЬНОГО ОКНА ОПЛАТА-ДОСТАВКА-ГАРАНТИИ*/
@@ -1691,5 +1632,17 @@ label {
   .cell-item__inner.cell-item__inner-active {
     width: 100%;
     margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .modal-dialog {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .modal-dialog {
+    width: 40%;
   }
 }
