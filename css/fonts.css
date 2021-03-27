@@ -4,6 +4,7 @@
     url("../fonts/MuseoSansCyrl-100.otf") format("otf"),
     url("../fonts/MuseoSansCyrl-100.ttf") format("ttf"),
     url("../fonts/MuseoSansCyrl-100.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
@@ -12,6 +13,7 @@
     url("../fonts/MuseoSansCyrl-300.otf") format("otf"),
     url("../fonts/MuseoSansCyrl-300.ttf") format("ttf"),
     url("../fonts/MuseoSansCyrl-300.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
@@ -20,6 +22,7 @@
     url("../fonts/MuseoSansCyrl-500.otf") format("otf"),
     url("../fonts/MuseoSansCyrl-500.ttf") format("ttf"),
     url("../fonts/MuseoSansCyrl-500.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
@@ -28,6 +31,7 @@
     url("../fonts/MuseoSansCyrl-700.otf") format("otf"),
     url("../fonts/MuseoSansCyrl-700.ttf") format("ttf"),
     url("../fonts/MuseoSansCyrl-700.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
@@ -36,6 +40,7 @@
     url("../fonts/MuseoSansCyrl-900.otf") format("otf"),
     url("../fonts/MuseoSansCyrl-900.ttf") format("ttf"),
     url("../fonts/MuseoSansCyrl-900.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
@@ -44,25 +49,22 @@
     url("../fonts/GothaProMed.otf") format("otf"),
     url("../fonts/GothamProMed.ttf") format("ttf"),
     url("../fonts/GothamProMed.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "GothamPRO-bold";
-    src: url("../fonts/GothaProMed.otf") format("otf"),
-      url("../fonts/GothaProMed.ttf") format("ttf");
+  font-family: "GothamPRO-bold";
+  src: url("../fonts/GothaProBol.eot") format("eot"),
+    url("../fonts/GothaProBol.otf") format("otf"),
+    url("../fonts/GothaProBol.ttf") format("ttf"),
+    url("../fonts/GothaProBol.woff") format("woff");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "GothamPRO-reg";
-  src: url("../fonts/GothamPro.eot") format("eot"), 
-  url("../fonts/GothamPro.ttf") format("ttf"),
-  url("../fonts/GothamPro.woff") format("woff");
-}
-
-@font-face {
-	font-family: 'Conv_RUBSN';
-	src: url('../fonts/RUBSN.eot');
-	src: local('☺'), url('../fonts/RUBSN.woff') format('woff'), url('../fonts/RUBSN.ttf') format('truetype'), url('../fonts/RUBSN.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
+  src: url("../fonts/GothamPro.eot") format("eot"),
+    url("../fonts/GothamPro.ttf") format("ttf"),
+    url("../fonts/GothamPro.woff") format("woff");
+  font-display: swap;
 }
