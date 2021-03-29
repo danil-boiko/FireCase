@@ -301,26 +301,6 @@ footer {
   background-color: #f4f4f4;
 }
 
-.breadcrumbs__list {
-  margin-block-start: 0;
-  font-size: 15px;
-  line-height: 28px;
-  font-family: "Gothampro-reg";
-  color: #6d6d6d;
-  letter-spacing: -1px;
-  list-style: disc;
-  padding-top: 50px;
-}
-
-.breadcrumbs__list-1 {
-  list-style: none;
-}
-
-.breadcrumbs__list li {
-  float: left;
-  padding-right: 24px;
-}
-
 .padding-left-none {
   padding-left: 0;
 }

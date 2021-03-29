@@ -264,21 +264,34 @@ p {
 
 .posts-grid {
   width: 100%;
-}
-
-.posts-grid__row {
   display: flex;
-  justify-content: space-between;
-  padding-bottom: 30px;
+  flex-wrap: wrap;
+  align-items: stretch;
+  align-content: stretch;
+  justify-content: flex-start;
 }
 
-.post-grid-item {
-  width: 100%;
+.posts-grid a {
   position: relative;
+  width: calc(100% / 3 - 1%);
+  margin: 0 1% 30px 0px;
 }
 
-.posts-grid__row img {
-  width: 98%;
+.posts-grid a:nth-child(4),
+.posts-grid a:nth-child(5) {
+  width: 49%;
+}
+
+.posts-grid a:nth-child(6) {
+  width: 39.5%;
+}
+
+.posts-grid a:last-child {
+  width: 26%;
+  margin-right: 0;
+}
+.posts-grid a img {
+  width: 100%;
   height: auto;
 }
 
@@ -288,6 +301,27 @@ p {
   left: 30px;
   color: #fff;
   font-size: 22px;
+  right: 15px;
+}
+
+.breadcrumbs__list-1 {
+  list-style: none;
+}
+
+.breadcrumbs__list {
+  margin-block-start: 0;
+  font-size: 15px;
+  line-height: 28px;
+  font-family: "Gothampro-reg";
+  color: #6d6d6d;
+  letter-spacing: -1px;
+  list-style: disc;
+  padding-top: 50px;
+}
+
+.breadcrumbs__list li {
+  float: left;
+  padding-right: 24px;
 }
 
 /*СТИЛИ ДЛЯ СТРАНИЦЫ БЛОГА*/
@@ -295,6 +329,33 @@ p {
 @media (max-width: 1840px) {
   .blog-container {
     max-width: 1206px;
+  }
+  .posts-grid-title {
+    left: 15px;
+  }
+  .posts-grid a {
+    position: relative;
+    width: calc(100% / 2 - 1%);
+    margin: 0 1% 30px 0px;
+  }
+  .posts-grid a:nth-child(3) {
+    width: 38%;
+    margin-right: 2.5%;
+  }
+  .posts-grid a:nth-child(4) {
+    width: 58.5%;
+  }
+  .posts-grid a:nth-child(5) {
+    width: 55%;
+  }
+  .posts-grid a:nth-child(6) {
+    width: 43%;
+  }
+  .posts-grid a:nth-child(7) {
+    width: 55%;
+  }
+  .posts-grid a:last-child {
+    width: 43%;
   }
 }
 
@@ -312,9 +373,6 @@ p {
     top: 15px;
     left: 15px;
     font-size: 19px;
-  }
-  .posts-grid__row {
-    padding-bottom: 15px;
   }
 }
 
@@ -436,20 +494,20 @@ p {
     left: 7px;
     font-size: 16px;
   }
-  .posts-grid__row {
-    padding-bottom: 5px;
-  }
 }
 
 @media (max-width: 530px) {
   .blog-title {
     padding-bottom: 20px;
   }
-  .posts-grid__row {
-    display: block;
-  }
   .blog-title {
     font-size: 35px;
+  }
+  .posts-grid {
+    display: block;
+  }
+  .posts-grid a {
+    width: 100%;
   }
   .posts-grid-title {
     top: 35px;
@@ -459,6 +517,7 @@ p {
   }
   .post-grid-item {
     padding-bottom: 15px;
+    position: relative;
   }
 }
 
@@ -480,13 +539,7 @@ p {
   .blog-title {
     font-size: 32px;
   }
-}
-
-@media (max-width: 361px) {
   .posts-grid-title {
-    top: 15px;
-    left: 15px;
-    right: 15px;
-    font-size: 24px;
+    font-size: 20px;
   }
 }
