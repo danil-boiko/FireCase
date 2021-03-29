@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница записи</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/critical.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/flickity.css">
+</head>
+
+<body>
+    <header>
+        <div class="container header-top">
+            <div class="logo col-xs-12 col-sm-12 col-md-1 col-lg-1 col-xl-1">
+                <a href=""><img src="img/logo.png" alt=""></a>
+            </div>
+            <div class="search col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                <form class="form-search">
+                    <input class="form-search_input" type="search" placeholder="Поиск" aria-label="Search">
+                    <button type="submit" class="form-search_btn"><img src="img/search.png" alt=""></button>
+                </form>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                <ul class="social__inner">
+                    <li href="https://twitter.com/"><img src="img/twitter.png" alt=""></li>
+                    <li href="https://www.instagram.com/"><img src="img/inst.png" alt=""></li>
+                    <li href="https://facebook.com/"><img src="img/facebook.png" alt=""></li>
+                    <li href="https://vk.com" class="header-vk"><img src="img/vk.png" alt=""></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+                <div class="header-phone"><a href="tel:+74951234567">+7 (495) 123 45-67</a></div>
+            </div>
+            <div class="col-xs-6 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+                <button href="#" class="header-btn">Задать вопрос</button>
+            </div>
+            <div class="header-card col-xs-6 col-sm-3 col-md-1 col-lg-1 col-xl-1">
+                <div class="header-card-counter">15</div>
+                <a href="">
+                    <img src="img/card.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="container-fluid header-bottom">
+            <div class="container">
+                <nav class="menu">
+                    <ul id="menu__list" class="menu__list">
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#"><img src="img/burger.png" alt="">Каталог</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Гарантия</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Оплата и доставка</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Помощь</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">О компании</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Информация</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Контакты</a>
+                        </li>
+                        <li class="menu__list-item additional__list-menu-item">
+                            <a class="menu__list-link" href="#"><img src="img/elipse.png" alt=""></a>
+                            <ul class="additional-menu">
+                                <li><a href="#">Упоминания в СМИ</a></li>
+                                <li><a href="#">Производство онлайн</a></li>
+                                <li><a href="#">Скидки и Акции</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <button id="menu__btn" class="menu__btn">
+                    <img src="img/burger.png" alt="">
+                </button>
+                <nav class="menu__mobile">
+                    <ul id="menu__list" class="menu__list">
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#"><img src="img/burger.png" alt="">Каталог</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Гарантия</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Оплата и доставка</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Помощь</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">О компании</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Информация</a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="breadcrumbs-section" style="background-color: #fff;">
+        <div class="container">
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__list-1"><a href="#">Главная</a></li>
+                    <li><a href="#">Блог</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="blog-container">
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2 col-xl-2">
+                <div class="blog-sidebar">
+                    <nav class="sidebar-menu">
+                        <ul>
+                            <li><a href="#">Шашлык</a></li>
+                            <li><a href="#">Сеты</a></li>
+                            <li><a href="#">Холодные закуски</a></li>
+                            <li><a href="#">Салаты</a></li>
+                            <li><a href="#">Первые блюда</a></li>
+                            <li><a href="#">Горячие блюда</a></li>
+                            <li><a href="#">Выпечка</a></li>
+                            <li><a href="#">Соусы</a></li>
+                            <li><a href="#">Напитки</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-9 col-md-9 col-lg-10 col-xl-10">
+                <div class="post-inner">
+                    <h1 class="post-title">Строительство мангала
+                        для дачи: особенности установки стационарного мангала</h1>
+                    <div class="meta-info">
+                        <div class="meta-cat">
+                            <a href="#">Шашлыки</a>
+                        </div>
+                        <div class="meta-date">
+                            29 янв.
+                        </div>
+                        <div class="meta-views">
+                            1500
+                        </div>
+                    </div>
+                    <div class="post-introduction">
+                        Дача у множества людей ассоциируется с грядками, посадками и большим количеством работ в огороде
+                        и цветнике.
+                    </div>
+                    <p class="post-p first-p">Наиболее распространен для дачи переносной мангал. Однако, для тех, кто
+                        ценит
+                        качество прожарки блюд, эстетичный внешний вид, а также имеет физическую возможность в виде
+                        большой территории участка, идеальным решением станет стационарный мангал, о строительстве
+                        которого я сегодня расскажу.</p>
+                    <div class="remark">Наиболее распространен для
+                        дачи переносной мангал.</div>
+                    <img class="post-img" src="img/post-image.jpg" alt="">
+                    <h2 class="post-h2">Подготовка к строительству</h2>
+                    <p class="post-p">Сделать это не трудно, но важно учесть несколько моментов. Запрещено располагать
+                        мангал вблизи деревянных построек или запаса сена, поскольку мангал является пожароопасным
+                        изделием. Вблизи своего или соседнего дома установка стационарного мангала тоже нежелательна.
+                        Обходите и зону очистных ям и канализационных технических углублений. Оптимально расположение
+                        мангала вблизи беседки. Если же беседки на участке пока нет – натяните тент над мангалом, под
+                        которым оформите зону отдыха, включая скамейки, стол и стулья.</p>
+                    <h2 class="post-h2">Нарисуйте или воспользуйтесь готовым чертежом мангала</h2>
+                    <p class="post-p">Сделать это не трудно, но важно учесть несколько моментов. Запрещено располагать
+                        мангал вблизи деревянных построек или запаса сена, поскольку мангал является пожароопасным
+                        изделием. Вблизи своего или соседнего дома установка стационарного мангала тоже нежелательна.
+                        Обходите и зону очистных ям и канализационных технических углублений. Оптимально расположение
+                        мангала вблизи беседки. Если же беседки на участке пока нет – натяните тент над мангалом, под
+                        которым оформите зону отдыха, включая скамейки, стол и стулья.</p>
+                    <div class="post-note">
+                        <div class="post-note__title">Важно</div>
+                        <div class="post-note__desc">Сделать это не трудно, но важно учесть несколько моментов.
+                            Запрещено располагать мангал вблизи деревянных построек или запаса сена, поскольку мангал
+                            является пожароопасным изделием. Вблизи своего или соседнего дома установка стационарного
+                            мангала тоже нежелательна. Обходите и зону очистных ям и канализационных технических
+                            углублений. Оптимально расположение мангала вблизи беседки. Если же беседки на участке пока
+                            нет – натяните тент над мангалом, под которым оформите зону отдыха, включая скамейки, стол и
+                            стулья.</div>
+                    </div>
+                    <h2 class="post-h2">Подготовка к строительству</h2>
+                    <p class="post-p">Сделать это не трудно, но важно учесть несколько моментов. Запрещено располагать
+                        мангал вблизи деревянных построек или запаса сена, поскольку мангал является пожароопасным
+                        изделием. Вблизи своего или соседнего дома установка стационарного мангала тоже нежелательна.
+                        Обходите и зону очистных ям и канализационных технических углублений. Оптимально расположение
+                        мангала вблизи беседки. Если же беседки на участке пока нет – натяните тент над мангалом, под
+                        которым оформите зону отдыха, включая скамейки, стол и стулья.</p>
+                    <div class="post-products__inner">
+                        <div class="post-product">
+                            <div class="post-product-image"><img src="img/post-product-1.jpg" alt="" width="178px"
+                                    height="174px"></div>
+                            <div class="post-product-arc">Артикул 123456</div>
+                            <div class="post-product-name">Мангал Редлайнер
+                                Комфорт</div>
+                            <div class="post-product-price">21 990 ₽</div>
+                            <div class="post-product-counter">
+                                <div class="post-product-quantity">
+                                    <button height="2px"><img src="img/minus.png" alt="" width="22px"
+                                            height="2px"></button>
+                                    1
+                                    <button height="22px"><img src="img/plus.png" alt="" width="22px"
+                                            height="22px"></button>
+                                </div>
+
+                                <button class="post-product-button">В КОРЗИНУ</button>
+
+                            </div>
+                        </div>
+                        <div class="post-product">
+                            <div class="post-product-image"><img src="img/post-product-2.jpg" alt="" width="173px"
+                                    height="157px"></div>
+                            <div class="post-product-arc">Артикул 123456</div>
+                            <div class="post-product-name">Мангал Редлайнер
+                                Комфорт</div>
+                            <div class="post-product-price">21 990 ₽</div>
+                            <div class="post-product-counter">
+                                <div class="post-product-quantity">
+                                    <button height="2px"><img src="img/minus.png" alt="" width="22px"
+                                            height="2px"></button>
+                                    1
+                                    <button height="22px"><img src="img/plus.png" alt="" width="22px"
+                                            height="22px"></button>
+                                </div>
+
+                                <button class="post-product-button">В КОРЗИНУ</button>
+
+                            </div>
+                        </div>
+                        <div class="post-product">
+                            <div class="post-product-image"><img src="img/post-product-3.jpg" alt="" width="156px"
+                                    height="172px"></div>
+                            <div class="post-product-arc">Артикул 123456</div>
+                            <div class="post-product-name">Мангал Редлайнер
+                                Комфорт</div>
+                            <div class="post-product-price">21 990 ₽</div>
+                            <div class="post-product-counter">
+                                <div class="post-product-quantity">
+                                    <button height="2px"><img src="img/minus.png" alt="" width="22px"
+                                            height="2px"></button>
+                                    1
+                                    <button height="22px"><img src="img/plus.png" alt="" width="22px"
+                                            height="22px"></button>
+                                </div>
+
+                                <button class="post-product-button">В КОРЗИНУ</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="post-h2">Нарисуйте или воспользуйтесь готовым чертежом мангала</h2>
+                    <p class="post-p">Депутат Гончар привел несколько аргументов, которые, по его мнению, объясняют
+                        необходимость принятия законопроекта об изоляции интернета. Вот их краткий пересказ (прямые
+                        цитаты даны в кавычках) с фактчеком.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class=" col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-2">
+                <div class="footer-logo-border">
+                    <img src="img/footer-logo.png" class="footer-logo" alt="">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+                <h3 class="footer-title">Компания</h3>
+                <ul class="footer-info">
+                    <li><a href="">О нас</a></li>
+                    <li><a href="">Политика конфиденциальности</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+                <h3 class="footer-title">Клиентам</h3>
+                <ul class="footer-info">
+                    <li><a href="">Акиции и скидки</a></li>
+                    <li><a href="">Доставка и оплата</a></li>
+                    <li><a href="">Гарантия и сервис</a></li>
+                </ul>
+            </div>
+            <div class="col-xl-1">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xl-3">
+                <div class="footer-contact">
+                    <div class="footer-phone"><a href="tel:+79091234567">+7 909 123-45-67</a></div>
+                    <div class="footer-mail"><a href="mailto:info@firecase.ru">info@firecase.ru</a></div>
+                </div>
+            </div>
+    </footer>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+
+</html>
