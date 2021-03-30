@@ -471,6 +471,30 @@ p {
     left: 15px;
     font-size: 19px;
   }
+  .post-title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .post-p,
+  .post-img,
+  .post-inner h2,
+  .remark {
+    margin-left: 0;
+  }
+  .post-introduction {
+    padding-bottom: 30px;
+  }
+  .post-p {
+    margin-bottom: 40px;
+  }
+  .post-img {
+    max-width: 650px;
+    width: 100%;
+    float: none;
+  }
+  .post-title {
+    padding-top: 0;
+  }
 }
 
 @media (max-width: 1210px) {
@@ -512,6 +536,9 @@ p {
   }
   .blog-title {
     font-size: 40px;
+  }
+  .post-img {
+    margin-bottom: 30px;
   }
 }
 @media (max-width: 840px) {
